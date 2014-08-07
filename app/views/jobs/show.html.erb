@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Progress:</strong>
+  <%= @job.progress %>
+</p>
+
+<p>
+  <strong>Failed:</strong>
+  <%= @job.failed %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @job.message %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

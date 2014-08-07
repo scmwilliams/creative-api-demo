@@ -1,0 +1,57 @@
+<%= form_for(@ad_unit) do |f| %>
+  <% if @ad_unit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ad_unit.errors.count, "error") %> prohibited this ad_unit from being saved:</h2>
+
+      <ul>
+      <% @ad_unit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :no_api %><br>
+    <%= f.check_box :no_api %>
+  </div>
+  <div class="field">
+    <%= f.label :approved %><br>
+    <%= f.check_box :approved %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :asset_group_id %><br>
+    <%= f.text_field :asset_group_id %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :insight %><br>
+    <%= f.number_field :insight %>
+  </div>
+  <div class="field">
+    <%= f.label :screen %><br>
+    <%= f.text_field :screen %>
+  </div>
+  <div class="field">
+    <%= f.label :asset_id %><br>
+    <%= f.text_field :asset_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pixel_tracker %><br>
+    <%= f.text_field :pixel_tracker %>
+  </div>
+  <div class="field">
+    <%= f.label :cta_id %><br>
+    <%= f.text_field :cta_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

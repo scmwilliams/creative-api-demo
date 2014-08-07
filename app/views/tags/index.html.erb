@@ -1,0 +1,35 @@
+<h1>Listing tags</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>No api</th>
+      <th>Insertion order</th>
+      <th>Ad unit</th>
+      <th>Impression goal</th>
+      <th>Partner</th>
+      <th>Easy touch</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tags.each do |tag| %>
+      <tr>
+        <td><%= tag.no_api %></td>
+        <td><%= tag.insertion_order %></td>
+        <td><%= tag.ad_unit %></td>
+        <td><%= tag.impression_goal %></td>
+        <td><%= tag.partner %></td>
+        <td><%= tag.easy_touch %></td>
+        <td><%= link_to 'Show', tag %></td>
+        <td><%= link_to 'Edit', edit_tag_path(tag) %></td>
+        <td><%= link_to 'Destroy', tag, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tag', new_tag_path %>

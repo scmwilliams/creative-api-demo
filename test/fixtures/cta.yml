@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  url: MyString
+  new_window: false
+  full_screen: false
+  ad_unit_id: 
+  pixel_width: 1
+  pixel_height: 1
+  right_offset: 1
+  top_offset: 1
+
+two:
+  name: MyString
+  url: MyString
+  new_window: false
+  full_screen: false
+  ad_unit_id: 
+  pixel_width: 1
+  pixel_height: 1
+  right_offset: 1
+  top_offset: 1

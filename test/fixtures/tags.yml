@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  no_api: false
+  insertion_order_id: 
+  ad_unit_id: 
+  impression_goal: 1
+  partner_id: 
+  easy_touch: false
+
+two:
+  no_api: false
+  insertion_order_id: 
+  ad_unit_id: 
+  impression_goal: 1
+  partner_id: 
+  easy_touch: false

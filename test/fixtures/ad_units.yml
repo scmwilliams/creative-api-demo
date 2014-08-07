@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  no_api: false
+  approved: false
+  name: MyString
+  asset_group_id: 
+  type: 
+  insight: 1
+  screen: MyString
+  asset_id: 
+  pixel_tracker: MyString
+  cta_id: 
+
+two:
+  no_api: false
+  approved: false
+  name: MyString
+  asset_group_id: 
+  type: 
+  insight: 1
+  screen: MyString
+  asset_id: 
+  pixel_tracker: MyString
+  cta_id: 

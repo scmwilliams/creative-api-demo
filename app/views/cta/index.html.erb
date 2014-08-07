@@ -1,0 +1,41 @@
+<h1>Listing cta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Url</th>
+      <th>New window</th>
+      <th>Full screen</th>
+      <th>Ad unit</th>
+      <th>Pixel width</th>
+      <th>Pixel height</th>
+      <th>Right offset</th>
+      <th>Top offset</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cta.each do |ctum| %>
+      <tr>
+        <td><%= ctum.name %></td>
+        <td><%= ctum.url %></td>
+        <td><%= ctum.new_window %></td>
+        <td><%= ctum.full_screen %></td>
+        <td><%= ctum.ad_unit %></td>
+        <td><%= ctum.pixel_width %></td>
+        <td><%= ctum.pixel_height %></td>
+        <td><%= ctum.right_offset %></td>
+        <td><%= ctum.top_offset %></td>
+        <td><%= link_to 'Show', ctum %></td>
+        <td><%= link_to 'Edit', edit_ctum_path(ctum) %></td>
+        <td><%= link_to 'Destroy', ctum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ctum', new_ctum_path %>

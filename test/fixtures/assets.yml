@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asset_group_id: 
+  asset_type: 1
+  job_id: 
+  screen: MyString
+  background: MyString
+  file: MyString
+  flexible: false
+  scalable: false
+
+two:
+  asset_group_id: 
+  asset_type: 1
+  job_id: 
+  screen: MyString
+  background: MyString
+  file: MyString
+  flexible: false
+  scalable: false

@@ -1,4 +1,22 @@
 Rails.application.routes.draw do
+  resources :ad_units
+
+  resources :jobs
+
+  resources :tags
+
+  resources :insertion_orders
+
+  resources :partners
+
+  resources :cta
+
+  resources :assets
+
+  resources :asset_groups
+
+  resources :brands
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>No api:</strong>
+  <%= @tag.no_api %>
+</p>
+
+<p>
+  <strong>Insertion order:</strong>
+  <%= @tag.insertion_order %>
+</p>
+
+<p>
+  <strong>Ad unit:</strong>
+  <%= @tag.ad_unit %>
+</p>
+
+<p>
+  <strong>Impression goal:</strong>
+  <%= @tag.impression_goal %>
+</p>
+
+<p>
+  <strong>Partner:</strong>
+  <%= @tag.partner %>
+</p>
+
+<p>
+  <strong>Easy touch:</strong>
+  <%= @tag.easy_touch %>
+</p>
+
+<%= link_to 'Edit', edit_tag_path(@tag) %> |
+<%= link_to 'Back', tags_path %>

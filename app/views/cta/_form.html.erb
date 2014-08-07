@@ -1,0 +1,53 @@
+<%= form_for(@ctum) do |f| %>
+  <% if @ctum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ctum.errors.count, "error") %> prohibited this ctum from being saved:</h2>
+
+      <ul>
+      <% @ctum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :new_window %><br>
+    <%= f.check_box :new_window %>
+  </div>
+  <div class="field">
+    <%= f.label :full_screen %><br>
+    <%= f.check_box :full_screen %>
+  </div>
+  <div class="field">
+    <%= f.label :ad_unit_id %><br>
+    <%= f.text_field :ad_unit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pixel_width %><br>
+    <%= f.number_field :pixel_width %>
+  </div>
+  <div class="field">
+    <%= f.label :pixel_height %><br>
+    <%= f.number_field :pixel_height %>
+  </div>
+  <div class="field">
+    <%= f.label :right_offset %><br>
+    <%= f.number_field :right_offset %>
+  </div>
+  <div class="field">
+    <%= f.label :top_offset %><br>
+    <%= f.number_field :top_offset %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

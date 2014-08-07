@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @asset_group.brand %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @asset_group.name %>
+</p>
+
+<%= link_to 'Edit', edit_asset_group_path(@asset_group) %> |
+<%= link_to 'Back', asset_groups_path %>

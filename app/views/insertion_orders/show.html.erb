@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @insertion_order.brand %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @insertion_order.name %>
+</p>
+
+<p>
+  <strong>Io number:</strong>
+  <%= @insertion_order.io_number %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @insertion_order.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @insertion_order.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_insertion_order_path(@insertion_order) %> |
+<%= link_to 'Back', insertion_orders_path %>
